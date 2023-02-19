@@ -1,0 +1,98 @@
+body {
+    margin: 0%;
+    overflow: hidden;
+}
+
+.bg {
+    display: block;
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgbg {
+    display: block;
+    margin: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 30%;
+}
+
+.title {
+    width: 130px;
+    height: 40px;
+    color: #00D7FB;
+    font-family: 'Bahnschrift';
+    font-weight: 900;
+    font-size: xx-large;
+    font-stretch: 80%;
+    text-align: center;
+    background: transparent;
+    position: relative;
+    text-shadow: #00D7FB;
+    width: 100%;
+}
+
+.centerbox {
+    display: inline-block;
+    outline: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+}
+
+.imgroll1 {
+    animation-name: roll1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+}
+
+.imgroll2 {
+    animation-name: roll2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+}
+
+@keyframes roll1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        left: 100%;
+        top: 0px;
+    }
+}
+
+@keyframes roll2 {
+    0% {
+        left: -100%;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
